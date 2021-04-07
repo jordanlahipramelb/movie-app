@@ -25,6 +25,7 @@ $(function () {
 
   //DELETES WHEN YOU CLICK THE BUTTON
   $('tbody').on('click', '.delete', function (evt) {
+    //removes closest parent tr according to the clicked target
     $(evt.target).closest('tr').remove();
   });
 });
